@@ -9,6 +9,8 @@ root.geometry("400x350")
 # setting the title of the GUI
 root.title("Youtube Video Downloader Application")
 # defining download function
+
+
 def download():
     # using try and except to execute program without errors
     try:
@@ -21,8 +23,10 @@ def download():
         root.update()
         link.set("Enter correct link")
 
+
 # created the Label widget to welcome user
-Label(root, text="Welcome to YouTube\nDownloader Application", font="Consolas 15 bold").pack()
+Label(root, text="Welcome to YouTube\nDownloader Application",
+      font="Consolas 15 bold").pack()
 # declaring StringVar type variable
 myVar = StringVar()
 # setting the default text to myVar
